@@ -1,0 +1,18 @@
+detection:
+  model: "hog"
+  upsample: 1
+
+encoding:
+  num_jitters: 1
+  model: "large"
+
+recognition:
+  threshold: 0.6
+  database: "faces.db"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+logging:
+  file: "logs/access_log.csv"
